@@ -2,12 +2,15 @@
 
 [ext_resource type="Texture2D" uid="uid://dogjrp86r5ipu" path="res://icon.svg" id="1_asnuc"]
 [ext_resource type="Script" path="res://input.gd" id="1_qgfqs"]
-[ext_resource type="Script" path="res://player_movement.gd" id="1_qys2c"]
+[ext_resource type="Script" path="res://player.gd" id="1_qys2c"]
 
 [sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_fpc7k"]
 properties/0/path = NodePath(".:position")
 properties/0/spawn = true
 properties/0/replication_mode = 1
+properties/1/path = NodePath(".:player_id")
+properties/1/spawn = true
+properties/1/replication_mode = 1
 
 [sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_r8ntc"]
 properties/0/path = NodePath("InputSynchronizer:input_direction")

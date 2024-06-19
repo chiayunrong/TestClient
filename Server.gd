@@ -17,5 +17,5 @@ func connect_to_server(address = ""):
 	multiplayer.connected_to_server.connect(_on_player_connected)
 	print("Connecting to server")
 
-func _on_player_connected(player_id):
+func _on_player_connected():
 	print("Connected to server!")
